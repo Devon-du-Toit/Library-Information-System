@@ -12,9 +12,20 @@ namespace CMPG223_Group4_Project
 {
     public partial class MainMenu : Form
     {
+        public int StaffId { get; }
+        public string Role { get; }
+        public string FirstName { get; }
+
         public MainMenu()
         {
             InitializeComponent();
+        }
+
+        public MainMenu(int staffId, string role, string firstName) : this()
+        {
+            StaffId = staffId;
+            Role = role;
+            FirstName = firstName;
         }
 
         private void libraryToolStripMenuItem_Click(object sender, EventArgs e)

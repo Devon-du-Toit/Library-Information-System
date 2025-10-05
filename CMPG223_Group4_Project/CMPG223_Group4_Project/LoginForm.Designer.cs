@@ -31,10 +31,8 @@
             this.Login_LB_Username = new System.Windows.Forms.Label();
             this.Login_LB_Password = new System.Windows.Forms.Label();
             this.Login_BNT = new System.Windows.Forms.Button();
-            this.TxtBx_Username = new System.Windows.Forms.TextBox();
-            this.TxtBx_Password = new System.Windows.Forms.TextBox();
-            this.Login_RB_Admin = new System.Windows.Forms.RadioButton();
-            this.Login_RB_Staff = new System.Windows.Forms.RadioButton();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.Login_PicBx = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Login_PicBx)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +64,7 @@
             this.Login_BNT.BackColor = System.Drawing.SystemColors.ControlDark;
             this.Login_BNT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_BNT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Login_BNT.Location = new System.Drawing.Point(466, 449);
+            this.Login_BNT.Location = new System.Drawing.Point(266, 458);
             this.Login_BNT.Name = "Login_BNT";
             this.Login_BNT.Size = new System.Drawing.Size(132, 37);
             this.Login_BNT.TabIndex = 4;
@@ -74,45 +72,20 @@
             this.Login_BNT.UseVisualStyleBackColor = false;
             this.Login_BNT.Click += new System.EventHandler(this.Login_BNT_Click);
             // 
-            // TxtBx_Username
+            // txtUsername
             // 
-            this.TxtBx_Username.Location = new System.Drawing.Point(234, 380);
-            this.TxtBx_Username.Name = "TxtBx_Username";
-            this.TxtBx_Username.Size = new System.Drawing.Size(200, 20);
-            this.TxtBx_Username.TabIndex = 5;
+            this.txtUsername.Location = new System.Drawing.Point(234, 380);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(200, 20);
+            this.txtUsername.TabIndex = 5;
             // 
-            // TxtBx_Password
+            // txtPassword
             // 
-            this.TxtBx_Password.Location = new System.Drawing.Point(234, 423);
-            this.TxtBx_Password.Name = "TxtBx_Password";
-            this.TxtBx_Password.Size = new System.Drawing.Size(200, 20);
-            this.TxtBx_Password.TabIndex = 6;
-            // 
-            // Login_RB_Admin
-            // 
-            this.Login_RB_Admin.AutoSize = true;
-            this.Login_RB_Admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_RB_Admin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Login_RB_Admin.Location = new System.Drawing.Point(234, 469);
-            this.Login_RB_Admin.Name = "Login_RB_Admin";
-            this.Login_RB_Admin.Size = new System.Drawing.Size(88, 28);
-            this.Login_RB_Admin.TabIndex = 7;
-            this.Login_RB_Admin.TabStop = true;
-            this.Login_RB_Admin.Text = "Admin";
-            this.Login_RB_Admin.UseVisualStyleBackColor = true;
-            // 
-            // Login_RB_Staff
-            // 
-            this.Login_RB_Staff.AutoSize = true;
-            this.Login_RB_Staff.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_RB_Staff.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Login_RB_Staff.Location = new System.Drawing.Point(367, 469);
-            this.Login_RB_Staff.Name = "Login_RB_Staff";
-            this.Login_RB_Staff.Size = new System.Drawing.Size(67, 28);
-            this.Login_RB_Staff.TabIndex = 8;
-            this.Login_RB_Staff.TabStop = true;
-            this.Login_RB_Staff.Text = "Staff";
-            this.Login_RB_Staff.UseVisualStyleBackColor = true;
+            this.txtPassword.Location = new System.Drawing.Point(234, 423);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(200, 20);
+            this.txtPassword.TabIndex = 6;
             // 
             // Login_PicBx
             // 
@@ -130,10 +103,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(610, 517);
-            this.Controls.Add(this.Login_RB_Staff);
-            this.Controls.Add(this.Login_RB_Admin);
-            this.Controls.Add(this.TxtBx_Password);
-            this.Controls.Add(this.TxtBx_Username);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.Login_BNT);
             this.Controls.Add(this.Login_PicBx);
             this.Controls.Add(this.Login_LB_Password);
@@ -155,10 +126,8 @@
         private System.Windows.Forms.Label Login_LB_Password;
         private System.Windows.Forms.PictureBox Login_PicBx;
         private System.Windows.Forms.Button Login_BNT;
-        private System.Windows.Forms.TextBox TxtBx_Username;
-        private System.Windows.Forms.TextBox TxtBx_Password;
-        private System.Windows.Forms.RadioButton Login_RB_Admin;
-        private System.Windows.Forms.RadioButton Login_RB_Staff;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
     }
 }
 
