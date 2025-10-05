@@ -68,25 +68,27 @@
             this.libraryToolStripMenuItem.Name = "libraryToolStripMenuItem";
             this.libraryToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.libraryToolStripMenuItem.Text = "LIBRARY";
-            this.libraryToolStripMenuItem.Click += new System.EventHandler(this.libraryToolStripMenuItem_Click);
             // 
             // tEXTBOOKSToolStripMenuItem
             // 
             this.tEXTBOOKSToolStripMenuItem.Name = "tEXTBOOKSToolStripMenuItem";
-            this.tEXTBOOKSToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.tEXTBOOKSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tEXTBOOKSToolStripMenuItem.Text = "TEXTBOOKS";
+            this.tEXTBOOKSToolStripMenuItem.Click += new System.EventHandler(this.tEXTBOOKSToolStripMenuItem_Click);
             // 
             // sUBJECTSToolStripMenuItem
             // 
             this.sUBJECTSToolStripMenuItem.Name = "sUBJECTSToolStripMenuItem";
-            this.sUBJECTSToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.sUBJECTSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sUBJECTSToolStripMenuItem.Text = "SUBJECTS";
+            this.sUBJECTSToolStripMenuItem.Click += new System.EventHandler(this.sUBJECTSToolStripMenuItem_Click);
             // 
             // aUTHORSToolStripMenuItem
             // 
             this.aUTHORSToolStripMenuItem.Name = "aUTHORSToolStripMenuItem";
-            this.aUTHORSToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.aUTHORSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aUTHORSToolStripMenuItem.Text = "AUTHORS";
+            this.aUTHORSToolStripMenuItem.Click += new System.EventHandler(this.aUTHORSToolStripMenuItem_Click_1);
             // 
             // eNDOWMENTSToolStripMenuItem
             // 

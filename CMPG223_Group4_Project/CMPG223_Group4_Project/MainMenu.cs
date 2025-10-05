@@ -28,14 +28,6 @@ namespace CMPG223_Group4_Project
             FirstName = firstName;
         }
 
-        private void libraryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Code just to check if form works and loads with no code. - Scholtz 
-            LibraryMaintenanceForm newform = new LibraryMaintenanceForm();
-
-            newform.ShowDialog();
-        }
-
         private void eNDOWMENTSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Code just to check if form works and loads with no code. - Scholtz 
@@ -66,6 +58,24 @@ namespace CMPG223_Group4_Project
             ReportsForm newform = new ReportsForm();
 
             newform.ShowDialog();
+        }
+
+        private void tEXTBOOKSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var f = new LibraryMaintenanceForm(LibraryTab.Textbooks))
+                f.ShowDialog(this);
+        }
+
+        private void aUTHORSToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            using (var f = new LibraryMaintenanceForm(LibraryTab.Authors))
+                f.ShowDialog(this);
+        }
+
+        private void sUBJECTSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var f = new LibraryMaintenanceForm(LibraryTab.Subjects))
+                f.ShowDialog(this);
         }
     }
 }
