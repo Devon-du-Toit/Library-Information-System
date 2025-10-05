@@ -68,7 +68,7 @@ CREATE TABLE TEXTBOOK (
   Title         VARCHAR(35) NOT NULL,
   ISBN          VARCHAR(13) NOT NULL,
   Edition       INT         NULL,
-  Publish_Year  DATETIME    NULL,
+  Publish_Year  YEAR    NULL,
   Status        BOOLEAN     NOT NULL DEFAULT TRUE,  -- Available = TRUE
   CONSTRAINT fk_textbook_subject FOREIGN KEY (Subject_ID)
     REFERENCES SUBJECT (Subject_ID)

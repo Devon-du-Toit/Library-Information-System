@@ -38,11 +38,11 @@ INSERT INTO BORROWER (First_Name, Last_Name, Email, Contact_Number) VALUES
 
 -- TEXTBOOKS
 INSERT INTO TEXTBOOK (Subject_ID, Author_ID, Title, ISBN, Edition, Publish_Year, Status) VALUES
-(1, 1, 'Calculus for Beginners', '9780000000001', 2, '2015-01-01', TRUE),
-(2, 3, 'Relativity Explained', '9780000000002', 1, '2010-01-01', TRUE),
-(3, 2, 'Foundations of Computing', '9780000000003', 3, '2018-01-01', TRUE),
-(4, 5, 'History of Algorithms', '9780000000004', 1, '2020-01-01', TRUE),
-(5, 4, 'Theory of Evolution', '9780000000005', 5, '2005-01-01', TRUE);
+(1, 1, 'Calculus for Beginners', '9780000000001', 2, 2015, TRUE),
+(2, 3, 'Relativity Explained', '9780000000002', 1, 2010, TRUE),
+(3, 2, 'Foundations of Computing', '9780000000003', 3, 2018, TRUE),
+(4, 5, 'History of Algorithms', '9780000000004', 1, 2020, TRUE),
+(5, 4, 'Theory of Evolution', '9780000000005', 5, 2005, TRUE);
 
 -- BORROWS
 INSERT INTO BORROW (Staff_ID, Borrower_ID, Date_Out, Date_Due, Date_In) VALUES
