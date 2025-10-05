@@ -31,7 +31,7 @@ namespace CMPG223_Group4_Project
             DataGrid_Textbook.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             DataGrid_Textbook.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            // textbook grid setup
+            // subject grid setup
             DataGrid_Subject.ReadOnly = true;
             DataGrid_Subject.AllowUserToAddRows = false;
             DataGrid_Subject.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
