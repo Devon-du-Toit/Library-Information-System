@@ -41,7 +41,9 @@ namespace CMPG223_Group4_Project
             dataGridView_Authors.ReadOnly = true;
             dataGridView_Authors.AllowUserToAddRows = false;
             dataGridView_Authors.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView_Authors.MultiSelect = false;
             dataGridView_Authors.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView_Authors.SelectionChanged += dataGridView_Authors_SelectionChanged; // wire the event so the label updates when a row changes
         }
 
         public LibraryMaintenanceForm(LibraryTab tabToSelect) : this()
@@ -148,6 +150,12 @@ namespace CMPG223_Group4_Project
                         da.Fill(dt);
                         dataGridView_Authors.AutoGenerateColumns = true;
                         dataGridView_Authors.DataSource = dt;
+
+                        if (dataGridView_Authors.Rows.Count > 0)
+                        {
+                            dataGridView_Authors.Rows[0].Selected = true;
+                            UpdateAuthorDetailsFromGrid();
+                        }
                     }
                 }
             }
@@ -156,6 +164,28 @@ namespace CMPG223_Group4_Project
                 MessageBox.Show("Failed to load authors:\n\n" + ex, "Database Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void UpdateAuthorDetailsFromGrid()
+        {
+            if (dataGridView_Authors.CurrentRow == null)
+            {
+                LB_Authros_ID_Authors.Text = "Select an entry to display ID";
+                Txt_FirstName_Author.Text = string.Empty;
+                Txt_LastName_Author.Text = string.Empty;
+                return;
+            }
+
+            var row = dataGridView_Authors.CurrentRow;
+
+            LB_Authros_ID_Authors.Text = row.Cells["Author_ID"].Value?.ToString() ?? "N/A";
+            Txt_FirstName_Author.Text = row.Cells["FirstName"].Value?.ToString() ?? string.Empty;
+            Txt_LastName_Author.Text = row.Cells["LastName"].Value?.ToString() ?? string.Empty;
+        }
+
+        private void dataGridView_Authors_SelectionChanged(object sender, EventArgs e)
+        {
+            UpdateAuthorDetailsFromGrid();
         }
     }
 }

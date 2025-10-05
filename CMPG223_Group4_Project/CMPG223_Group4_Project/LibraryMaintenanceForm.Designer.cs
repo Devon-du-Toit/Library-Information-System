@@ -592,9 +592,9 @@
             this.LB_Authros_ID_Authors.Location = new System.Drawing.Point(98, 223);
             this.LB_Authros_ID_Authors.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LB_Authros_ID_Authors.Name = "LB_Authros_ID_Authors";
-            this.LB_Authros_ID_Authors.Size = new System.Drawing.Size(156, 17);
+            this.LB_Authros_ID_Authors.Size = new System.Drawing.Size(225, 17);
             this.LB_Authros_ID_Authors.TabIndex = 58;
-            this.LB_Authros_ID_Authors.Text = "\"ID to be generated\"";
+            this.LB_Authros_ID_Authors.Text = "\"Select an entry to display ID\"";
             // 
             // PicBx_Author
             // 
