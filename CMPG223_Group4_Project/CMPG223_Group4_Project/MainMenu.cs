@@ -77,5 +77,15 @@ namespace CMPG223_Group4_Project
             using (var f = new LibraryMaintenanceForm(LibraryTab.Subjects))
                 f.ShowDialog(this);
         }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void libraryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

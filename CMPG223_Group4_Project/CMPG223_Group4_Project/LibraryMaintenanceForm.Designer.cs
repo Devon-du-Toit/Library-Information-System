@@ -143,7 +143,7 @@
             this.Tab_TxtBooks.Controls.Add(this.LB_Search_TextBook);
             this.Tab_TxtBooks.Location = new System.Drawing.Point(4, 22);
             this.Tab_TxtBooks.Name = "Tab_TxtBooks";
-            this.Tab_TxtBooks.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Tab_TxtBooks.Padding = new System.Windows.Forms.Padding(3);
             this.Tab_TxtBooks.Size = new System.Drawing.Size(882, 400);
             this.Tab_TxtBooks.TabIndex = 1;
             this.Tab_TxtBooks.Text = "Textbooks";
@@ -152,7 +152,7 @@
             // 
             this.CB_DBSubjects_TextBooks.FormattingEnabled = true;
             this.CB_DBSubjects_TextBooks.Location = new System.Drawing.Point(465, 264);
-            this.CB_DBSubjects_TextBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CB_DBSubjects_TextBooks.Margin = new System.Windows.Forms.Padding(2);
             this.CB_DBSubjects_TextBooks.Name = "CB_DBSubjects_TextBooks";
             this.CB_DBSubjects_TextBooks.Size = new System.Drawing.Size(234, 21);
             this.CB_DBSubjects_TextBooks.TabIndex = 29;
@@ -405,7 +405,7 @@
             this.Tab_Subjects.Controls.Add(this.Bnt_Search_Subject);
             this.Tab_Subjects.Location = new System.Drawing.Point(4, 22);
             this.Tab_Subjects.Name = "Tab_Subjects";
-            this.Tab_Subjects.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Tab_Subjects.Padding = new System.Windows.Forms.Padding(3);
             this.Tab_Subjects.Size = new System.Drawing.Size(882, 400);
             this.Tab_Subjects.TabIndex = 2;
             this.Tab_Subjects.Text = "Subjects";
@@ -580,7 +580,7 @@
             this.Tab_Authors.Controls.Add(this.Bnt_Search_Author);
             this.Tab_Authors.Location = new System.Drawing.Point(4, 22);
             this.Tab_Authors.Name = "Tab_Authors";
-            this.Tab_Authors.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Tab_Authors.Padding = new System.Windows.Forms.Padding(3);
             this.Tab_Authors.Size = new System.Drawing.Size(882, 400);
             this.Tab_Authors.TabIndex = 3;
             this.Tab_Authors.Text = "Authors";
@@ -742,6 +742,7 @@
             this.Controls.Add(this.TabControl_Library);
             this.Name = "LibraryMaintenanceForm";
             this.Text = "LibraryMaintenanceForm";
+            this.Load += new System.EventHandler(this.LibraryMaintenanceForm_Load);
             this.TabControl_Library.ResumeLayout(false);
             this.Tab_TxtBooks.ResumeLayout(false);
             this.Tab_TxtBooks.PerformLayout();
