@@ -72,21 +72,21 @@
             // tEXTBOOKSToolStripMenuItem
             // 
             this.tEXTBOOKSToolStripMenuItem.Name = "tEXTBOOKSToolStripMenuItem";
-            this.tEXTBOOKSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tEXTBOOKSToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.tEXTBOOKSToolStripMenuItem.Text = "TEXTBOOKS";
             this.tEXTBOOKSToolStripMenuItem.Click += new System.EventHandler(this.tEXTBOOKSToolStripMenuItem_Click);
             // 
             // sUBJECTSToolStripMenuItem
             // 
             this.sUBJECTSToolStripMenuItem.Name = "sUBJECTSToolStripMenuItem";
-            this.sUBJECTSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sUBJECTSToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.sUBJECTSToolStripMenuItem.Text = "SUBJECTS";
             this.sUBJECTSToolStripMenuItem.Click += new System.EventHandler(this.sUBJECTSToolStripMenuItem_Click);
             // 
             // aUTHORSToolStripMenuItem
             // 
             this.aUTHORSToolStripMenuItem.Name = "aUTHORSToolStripMenuItem";
-            this.aUTHORSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aUTHORSToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.aUTHORSToolStripMenuItem.Text = "AUTHORS";
             this.aUTHORSToolStripMenuItem.Click += new System.EventHandler(this.aUTHORSToolStripMenuItem_Click_1);
             // 
@@ -119,13 +119,13 @@
             this.eMPLOYEEMENTToolStripMenuItem.Name = "eMPLOYEEMENTToolStripMenuItem";
             this.eMPLOYEEMENTToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.eMPLOYEEMENTToolStripMenuItem.Text = "PERSONAL";
-            this.eMPLOYEEMENTToolStripMenuItem.Click += new System.EventHandler(this.eMPLOYEEMENTToolStripMenuItem_Click);
             // 
             // sTAFFToolStripMenuItem
             // 
             this.sTAFFToolStripMenuItem.Name = "sTAFFToolStripMenuItem";
-            this.sTAFFToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.sTAFFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sTAFFToolStripMenuItem.Text = "STAFF";
+            this.sTAFFToolStripMenuItem.Click += new System.EventHandler(this.sTAFFToolStripMenuItem_Click);
             // 
             // bORROWToolStripMenuItem
             // 

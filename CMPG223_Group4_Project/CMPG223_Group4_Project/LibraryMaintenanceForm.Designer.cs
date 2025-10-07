@@ -34,15 +34,11 @@
             this.LB_TextBook_ID_Textbook = new System.Windows.Forms.Label();
             this.dateTimePicker_Year_Textbook = new System.Windows.Forms.DateTimePicker();
             this.Bnt_Close_Textbook = new System.Windows.Forms.Button();
-            this.Bnt_Delete_Textbook = new System.Windows.Forms.Button();
             this.Bnt_Update_Textbook = new System.Windows.Forms.Button();
             this.Bnt_New_Textbook = new System.Windows.Forms.Button();
             this.Txt_Qty_Textbook = new System.Windows.Forms.TextBox();
             this.Txt_Title_Textbook = new System.Windows.Forms.TextBox();
-            this.RB_NotAvailable_Textbook = new System.Windows.Forms.RadioButton();
-            this.RB_available_Textbook = new System.Windows.Forms.RadioButton();
             this.Txt_ISBN_Textbook = new System.Windows.Forms.TextBox();
-            this.Txt_Author_Textbook = new System.Windows.Forms.TextBox();
             this.LB_Edition_Textbook = new System.Windows.Forms.Label();
             this.LB_PHYear = new System.Windows.Forms.Label();
             this.LB_Subject = new System.Windows.Forms.Label();
@@ -52,7 +48,6 @@
             this.LB_Author_Textbook = new System.Windows.Forms.Label();
             this.LB_Textbook_ID = new System.Windows.Forms.Label();
             this.DataGrid_Textbook = new System.Windows.Forms.DataGridView();
-            this.Bnt_Clear_TextBook = new System.Windows.Forms.Button();
             this.Bnt_Search_TextBook = new System.Windows.Forms.Button();
             this.TxtBx_Search_TextBook = new System.Windows.Forms.TextBox();
             this.LB_Search_TextBook = new System.Windows.Forms.Label();
@@ -60,7 +55,6 @@
             this.LB_Subject_ID_Subjects = new System.Windows.Forms.Label();
             this.PicBox_Subjects = new System.Windows.Forms.PictureBox();
             this.Bnt_Close_Subject = new System.Windows.Forms.Button();
-            this.Bnt_Delete_Subject = new System.Windows.Forms.Button();
             this.Bnt_Update_Subject = new System.Windows.Forms.Button();
             this.Bnt_New_Subject = new System.Windows.Forms.Button();
             this.Txt_Description_Subject = new System.Windows.Forms.TextBox();
@@ -71,13 +65,11 @@
             this.DataGrid_Subject = new System.Windows.Forms.DataGridView();
             this.Txt_Search_Subject = new System.Windows.Forms.TextBox();
             this.LB_Search_Subject = new System.Windows.Forms.Label();
-            this.Bnt_Clear_Subject = new System.Windows.Forms.Button();
             this.Bnt_Search_Subject = new System.Windows.Forms.Button();
             this.Tab_Authors = new System.Windows.Forms.TabPage();
             this.LB_Authros_ID_Authors = new System.Windows.Forms.Label();
             this.PicBx_Author = new System.Windows.Forms.PictureBox();
             this.Bnt_Close_Author = new System.Windows.Forms.Button();
-            this.Bnt_Delete_Author = new System.Windows.Forms.Button();
             this.Bnt_Update_Author = new System.Windows.Forms.Button();
             this.Bnt_New_Authors = new System.Windows.Forms.Button();
             this.Txt_LastName_Author = new System.Windows.Forms.TextBox();
@@ -88,8 +80,10 @@
             this.dataGridView_Authors = new System.Windows.Forms.DataGridView();
             this.Txt_Search_Author = new System.Windows.Forms.TextBox();
             this.LB_Search_Authors = new System.Windows.Forms.Label();
-            this.Bnt_Clear_Author = new System.Windows.Forms.Button();
             this.Bnt_Search_Author = new System.Windows.Forms.Button();
+            this.RB_available_Textbook = new System.Windows.Forms.RadioButton();
+            this.RB_NotAvailable_Textbook = new System.Windows.Forms.RadioButton();
+            this.Cmb_Author_Textbook = new System.Windows.Forms.TextBox();
             this.TabControl_Library.SuspendLayout();
             this.Tab_TxtBooks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_Textbook)).BeginInit();
@@ -115,11 +109,11 @@
             // Tab_TxtBooks
             // 
             this.Tab_TxtBooks.BackColor = System.Drawing.Color.PeachPuff;
+            this.Tab_TxtBooks.Controls.Add(this.Cmb_Author_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.CB_DBSubjects_TextBooks);
             this.Tab_TxtBooks.Controls.Add(this.LB_TextBook_ID_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.dateTimePicker_Year_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.Bnt_Close_Textbook);
-            this.Tab_TxtBooks.Controls.Add(this.Bnt_Delete_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.Bnt_Update_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.Bnt_New_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.Txt_Qty_Textbook);
@@ -127,7 +121,6 @@
             this.Tab_TxtBooks.Controls.Add(this.RB_NotAvailable_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.RB_available_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.Txt_ISBN_Textbook);
-            this.Tab_TxtBooks.Controls.Add(this.Txt_Author_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.LB_Edition_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.LB_PHYear);
             this.Tab_TxtBooks.Controls.Add(this.LB_Subject);
@@ -137,13 +130,12 @@
             this.Tab_TxtBooks.Controls.Add(this.LB_Author_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.LB_Textbook_ID);
             this.Tab_TxtBooks.Controls.Add(this.DataGrid_Textbook);
-            this.Tab_TxtBooks.Controls.Add(this.Bnt_Clear_TextBook);
             this.Tab_TxtBooks.Controls.Add(this.Bnt_Search_TextBook);
             this.Tab_TxtBooks.Controls.Add(this.TxtBx_Search_TextBook);
             this.Tab_TxtBooks.Controls.Add(this.LB_Search_TextBook);
             this.Tab_TxtBooks.Location = new System.Drawing.Point(4, 22);
             this.Tab_TxtBooks.Name = "Tab_TxtBooks";
-            this.Tab_TxtBooks.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Tab_TxtBooks.Padding = new System.Windows.Forms.Padding(3);
             this.Tab_TxtBooks.Size = new System.Drawing.Size(882, 400);
             this.Tab_TxtBooks.TabIndex = 1;
             this.Tab_TxtBooks.Text = "Textbooks";
@@ -152,7 +144,7 @@
             // 
             this.CB_DBSubjects_TextBooks.FormattingEnabled = true;
             this.CB_DBSubjects_TextBooks.Location = new System.Drawing.Point(465, 264);
-            this.CB_DBSubjects_TextBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CB_DBSubjects_TextBooks.Margin = new System.Windows.Forms.Padding(2);
             this.CB_DBSubjects_TextBooks.Name = "CB_DBSubjects_TextBooks";
             this.CB_DBSubjects_TextBooks.Size = new System.Drawing.Size(234, 21);
             this.CB_DBSubjects_TextBooks.TabIndex = 29;
@@ -184,16 +176,7 @@
             this.Bnt_Close_Textbook.TabIndex = 26;
             this.Bnt_Close_Textbook.Text = "Close";
             this.Bnt_Close_Textbook.UseVisualStyleBackColor = false;
-            // 
-            // Bnt_Delete_Textbook
-            // 
-            this.Bnt_Delete_Textbook.BackColor = System.Drawing.Color.Silver;
-            this.Bnt_Delete_Textbook.Location = new System.Drawing.Point(752, 305);
-            this.Bnt_Delete_Textbook.Name = "Bnt_Delete_Textbook";
-            this.Bnt_Delete_Textbook.Size = new System.Drawing.Size(124, 23);
-            this.Bnt_Delete_Textbook.TabIndex = 25;
-            this.Bnt_Delete_Textbook.Text = "Delete";
-            this.Bnt_Delete_Textbook.UseVisualStyleBackColor = false;
+            this.Bnt_Close_Textbook.Click += new System.EventHandler(this.Bnt_Close_Textbook_Click);
             // 
             // Bnt_Update_Textbook
             // 
@@ -204,6 +187,7 @@
             this.Bnt_Update_Textbook.TabIndex = 24;
             this.Bnt_Update_Textbook.Text = "Update";
             this.Bnt_Update_Textbook.UseVisualStyleBackColor = false;
+            this.Bnt_Update_Textbook.Click += new System.EventHandler(this.Bnt_Update_Textbook_Click);
             // 
             // Bnt_New_Textbook
             // 
@@ -214,6 +198,7 @@
             this.Bnt_New_Textbook.TabIndex = 22;
             this.Bnt_New_Textbook.Text = "New";
             this.Bnt_New_Textbook.UseVisualStyleBackColor = false;
+            this.Bnt_New_Textbook.Click += new System.EventHandler(this.Bnt_New_Textbook_Click);
             // 
             // Txt_Qty_Textbook
             // 
@@ -229,41 +214,12 @@
             this.Txt_Title_Textbook.Size = new System.Drawing.Size(234, 20);
             this.Txt_Title_Textbook.TabIndex = 18;
             // 
-            // RB_NotAvailable_Textbook
-            // 
-            this.RB_NotAvailable_Textbook.AutoSize = true;
-            this.RB_NotAvailable_Textbook.Location = new System.Drawing.Point(229, 357);
-            this.RB_NotAvailable_Textbook.Name = "RB_NotAvailable_Textbook";
-            this.RB_NotAvailable_Textbook.Size = new System.Drawing.Size(88, 17);
-            this.RB_NotAvailable_Textbook.TabIndex = 17;
-            this.RB_NotAvailable_Textbook.TabStop = true;
-            this.RB_NotAvailable_Textbook.Text = "Not Available";
-            this.RB_NotAvailable_Textbook.UseVisualStyleBackColor = true;
-            // 
-            // RB_available_Textbook
-            // 
-            this.RB_available_Textbook.AutoSize = true;
-            this.RB_available_Textbook.Location = new System.Drawing.Point(101, 357);
-            this.RB_available_Textbook.Name = "RB_available_Textbook";
-            this.RB_available_Textbook.Size = new System.Drawing.Size(68, 17);
-            this.RB_available_Textbook.TabIndex = 16;
-            this.RB_available_Textbook.TabStop = true;
-            this.RB_available_Textbook.Text = "Available";
-            this.RB_available_Textbook.UseVisualStyleBackColor = true;
-            // 
             // Txt_ISBN_Textbook
             // 
             this.Txt_ISBN_Textbook.Location = new System.Drawing.Point(101, 312);
             this.Txt_ISBN_Textbook.Name = "Txt_ISBN_Textbook";
             this.Txt_ISBN_Textbook.Size = new System.Drawing.Size(234, 20);
             this.Txt_ISBN_Textbook.TabIndex = 15;
-            // 
-            // Txt_Author_Textbook
-            // 
-            this.Txt_Author_Textbook.Location = new System.Drawing.Point(101, 264);
-            this.Txt_Author_Textbook.Name = "Txt_Author_Textbook";
-            this.Txt_Author_Textbook.Size = new System.Drawing.Size(234, 20);
-            this.Txt_Author_Textbook.TabIndex = 14;
             // 
             // LB_Edition_Textbook
             // 
@@ -347,25 +303,16 @@
             this.DataGrid_Textbook.Size = new System.Drawing.Size(870, 180);
             this.DataGrid_Textbook.TabIndex = 4;
             // 
-            // Bnt_Clear_TextBook
-            // 
-            this.Bnt_Clear_TextBook.BackgroundImage = global::CMPG223_Group4_Project.Properties.Resources.Clear_Icon;
-            this.Bnt_Clear_TextBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Bnt_Clear_TextBook.Location = new System.Drawing.Point(752, 6);
-            this.Bnt_Clear_TextBook.Name = "Bnt_Clear_TextBook";
-            this.Bnt_Clear_TextBook.Size = new System.Drawing.Size(124, 23);
-            this.Bnt_Clear_TextBook.TabIndex = 3;
-            this.Bnt_Clear_TextBook.UseVisualStyleBackColor = true;
-            // 
             // Bnt_Search_TextBook
             // 
             this.Bnt_Search_TextBook.BackgroundImage = global::CMPG223_Group4_Project.Properties.Resources.Magnifying_glass;
             this.Bnt_Search_TextBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Bnt_Search_TextBook.Location = new System.Drawing.Point(599, 6);
+            this.Bnt_Search_TextBook.Location = new System.Drawing.Point(752, 4);
             this.Bnt_Search_TextBook.Name = "Bnt_Search_TextBook";
             this.Bnt_Search_TextBook.Size = new System.Drawing.Size(124, 23);
             this.Bnt_Search_TextBook.TabIndex = 2;
             this.Bnt_Search_TextBook.UseVisualStyleBackColor = true;
+            this.Bnt_Search_TextBook.Click += new System.EventHandler(this.Bnt_Search_TextBook_Click);
             // 
             // TxtBx_Search_TextBook
             // 
@@ -390,7 +337,6 @@
             this.Tab_Subjects.Controls.Add(this.LB_Subject_ID_Subjects);
             this.Tab_Subjects.Controls.Add(this.PicBox_Subjects);
             this.Tab_Subjects.Controls.Add(this.Bnt_Close_Subject);
-            this.Tab_Subjects.Controls.Add(this.Bnt_Delete_Subject);
             this.Tab_Subjects.Controls.Add(this.Bnt_Update_Subject);
             this.Tab_Subjects.Controls.Add(this.Bnt_New_Subject);
             this.Tab_Subjects.Controls.Add(this.Txt_Description_Subject);
@@ -401,11 +347,10 @@
             this.Tab_Subjects.Controls.Add(this.DataGrid_Subject);
             this.Tab_Subjects.Controls.Add(this.Txt_Search_Subject);
             this.Tab_Subjects.Controls.Add(this.LB_Search_Subject);
-            this.Tab_Subjects.Controls.Add(this.Bnt_Clear_Subject);
             this.Tab_Subjects.Controls.Add(this.Bnt_Search_Subject);
             this.Tab_Subjects.Location = new System.Drawing.Point(4, 22);
             this.Tab_Subjects.Name = "Tab_Subjects";
-            this.Tab_Subjects.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Tab_Subjects.Padding = new System.Windows.Forms.Padding(3);
             this.Tab_Subjects.Size = new System.Drawing.Size(882, 400);
             this.Tab_Subjects.TabIndex = 2;
             this.Tab_Subjects.Text = "Subjects";
@@ -440,16 +385,7 @@
             this.Bnt_Close_Subject.TabIndex = 41;
             this.Bnt_Close_Subject.Text = "Close";
             this.Bnt_Close_Subject.UseVisualStyleBackColor = false;
-            // 
-            // Bnt_Delete_Subject
-            // 
-            this.Bnt_Delete_Subject.BackColor = System.Drawing.Color.Silver;
-            this.Bnt_Delete_Subject.Location = new System.Drawing.Point(752, 306);
-            this.Bnt_Delete_Subject.Name = "Bnt_Delete_Subject";
-            this.Bnt_Delete_Subject.Size = new System.Drawing.Size(124, 23);
-            this.Bnt_Delete_Subject.TabIndex = 40;
-            this.Bnt_Delete_Subject.Text = "Delete";
-            this.Bnt_Delete_Subject.UseVisualStyleBackColor = false;
+            this.Bnt_Close_Subject.Click += new System.EventHandler(this.Bnt_Close_Subject_Click);
             // 
             // Bnt_Update_Subject
             // 
@@ -460,6 +396,7 @@
             this.Bnt_Update_Subject.TabIndex = 39;
             this.Bnt_Update_Subject.Text = "Update";
             this.Bnt_Update_Subject.UseVisualStyleBackColor = false;
+            this.Bnt_Update_Subject.Click += new System.EventHandler(this.Bnt_Update_Subject_Click);
             // 
             // Bnt_New_Subject
             // 
@@ -470,6 +407,7 @@
             this.Bnt_New_Subject.TabIndex = 38;
             this.Bnt_New_Subject.Text = "New";
             this.Bnt_New_Subject.UseVisualStyleBackColor = false;
+            this.Bnt_New_Subject.Click += new System.EventHandler(this.Bnt_New_Subject_Click);
             // 
             // Txt_Description_Subject
             // 
@@ -539,25 +477,16 @@
             this.LB_Search_Subject.TabIndex = 27;
             this.LB_Search_Subject.Text = "Search:";
             // 
-            // Bnt_Clear_Subject
-            // 
-            this.Bnt_Clear_Subject.BackgroundImage = global::CMPG223_Group4_Project.Properties.Resources.Clear_Icon;
-            this.Bnt_Clear_Subject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Bnt_Clear_Subject.Location = new System.Drawing.Point(752, 7);
-            this.Bnt_Clear_Subject.Name = "Bnt_Clear_Subject";
-            this.Bnt_Clear_Subject.Size = new System.Drawing.Size(124, 23);
-            this.Bnt_Clear_Subject.TabIndex = 30;
-            this.Bnt_Clear_Subject.UseVisualStyleBackColor = true;
-            // 
             // Bnt_Search_Subject
             // 
             this.Bnt_Search_Subject.BackgroundImage = global::CMPG223_Group4_Project.Properties.Resources.Magnifying_glass;
             this.Bnt_Search_Subject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Bnt_Search_Subject.Location = new System.Drawing.Point(599, 7);
+            this.Bnt_Search_Subject.Location = new System.Drawing.Point(752, 6);
             this.Bnt_Search_Subject.Name = "Bnt_Search_Subject";
             this.Bnt_Search_Subject.Size = new System.Drawing.Size(124, 23);
             this.Bnt_Search_Subject.TabIndex = 29;
             this.Bnt_Search_Subject.UseVisualStyleBackColor = true;
+            this.Bnt_Search_Subject.Click += new System.EventHandler(this.Bnt_Search_Subject_Click);
             // 
             // Tab_Authors
             // 
@@ -565,7 +494,6 @@
             this.Tab_Authors.Controls.Add(this.LB_Authros_ID_Authors);
             this.Tab_Authors.Controls.Add(this.PicBx_Author);
             this.Tab_Authors.Controls.Add(this.Bnt_Close_Author);
-            this.Tab_Authors.Controls.Add(this.Bnt_Delete_Author);
             this.Tab_Authors.Controls.Add(this.Bnt_Update_Author);
             this.Tab_Authors.Controls.Add(this.Bnt_New_Authors);
             this.Tab_Authors.Controls.Add(this.Txt_LastName_Author);
@@ -576,11 +504,10 @@
             this.Tab_Authors.Controls.Add(this.dataGridView_Authors);
             this.Tab_Authors.Controls.Add(this.Txt_Search_Author);
             this.Tab_Authors.Controls.Add(this.LB_Search_Authors);
-            this.Tab_Authors.Controls.Add(this.Bnt_Clear_Author);
             this.Tab_Authors.Controls.Add(this.Bnt_Search_Author);
             this.Tab_Authors.Location = new System.Drawing.Point(4, 22);
             this.Tab_Authors.Name = "Tab_Authors";
-            this.Tab_Authors.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Tab_Authors.Padding = new System.Windows.Forms.Padding(3);
             this.Tab_Authors.Size = new System.Drawing.Size(882, 400);
             this.Tab_Authors.TabIndex = 3;
             this.Tab_Authors.Text = "Authors";
@@ -615,16 +542,7 @@
             this.Bnt_Close_Author.TabIndex = 56;
             this.Bnt_Close_Author.Text = "Close";
             this.Bnt_Close_Author.UseVisualStyleBackColor = false;
-            // 
-            // Bnt_Delete_Author
-            // 
-            this.Bnt_Delete_Author.BackColor = System.Drawing.Color.Silver;
-            this.Bnt_Delete_Author.Location = new System.Drawing.Point(752, 306);
-            this.Bnt_Delete_Author.Name = "Bnt_Delete_Author";
-            this.Bnt_Delete_Author.Size = new System.Drawing.Size(124, 23);
-            this.Bnt_Delete_Author.TabIndex = 55;
-            this.Bnt_Delete_Author.Text = "Delete";
-            this.Bnt_Delete_Author.UseVisualStyleBackColor = false;
+            this.Bnt_Close_Author.Click += new System.EventHandler(this.Bnt_Close_Author_Click);
             // 
             // Bnt_Update_Author
             // 
@@ -635,6 +553,7 @@
             this.Bnt_Update_Author.TabIndex = 54;
             this.Bnt_Update_Author.Text = "Update";
             this.Bnt_Update_Author.UseVisualStyleBackColor = false;
+            this.Bnt_Update_Author.Click += new System.EventHandler(this.Bnt_Update_Author_Click);
             // 
             // Bnt_New_Authors
             // 
@@ -645,6 +564,7 @@
             this.Bnt_New_Authors.TabIndex = 53;
             this.Bnt_New_Authors.Text = "New";
             this.Bnt_New_Authors.UseVisualStyleBackColor = false;
+            this.Bnt_New_Authors.Click += new System.EventHandler(this.Bnt_New_Authors_Click);
             // 
             // Txt_LastName_Author
             // 
@@ -714,25 +634,45 @@
             this.LB_Search_Authors.TabIndex = 42;
             this.LB_Search_Authors.Text = "Search:";
             // 
-            // Bnt_Clear_Author
-            // 
-            this.Bnt_Clear_Author.BackgroundImage = global::CMPG223_Group4_Project.Properties.Resources.Clear_Icon;
-            this.Bnt_Clear_Author.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Bnt_Clear_Author.Location = new System.Drawing.Point(752, 7);
-            this.Bnt_Clear_Author.Name = "Bnt_Clear_Author";
-            this.Bnt_Clear_Author.Size = new System.Drawing.Size(124, 23);
-            this.Bnt_Clear_Author.TabIndex = 45;
-            this.Bnt_Clear_Author.UseVisualStyleBackColor = true;
-            // 
             // Bnt_Search_Author
             // 
             this.Bnt_Search_Author.BackgroundImage = global::CMPG223_Group4_Project.Properties.Resources.Magnifying_glass;
             this.Bnt_Search_Author.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Bnt_Search_Author.Location = new System.Drawing.Point(599, 7);
+            this.Bnt_Search_Author.Location = new System.Drawing.Point(752, 7);
             this.Bnt_Search_Author.Name = "Bnt_Search_Author";
             this.Bnt_Search_Author.Size = new System.Drawing.Size(124, 23);
             this.Bnt_Search_Author.TabIndex = 44;
             this.Bnt_Search_Author.UseVisualStyleBackColor = true;
+            this.Bnt_Search_Author.Click += new System.EventHandler(this.Bnt_Search_Author_Click);
+            // 
+            // RB_available_Textbook
+            // 
+            this.RB_available_Textbook.AutoSize = true;
+            this.RB_available_Textbook.Location = new System.Drawing.Point(101, 357);
+            this.RB_available_Textbook.Name = "RB_available_Textbook";
+            this.RB_available_Textbook.Size = new System.Drawing.Size(68, 17);
+            this.RB_available_Textbook.TabIndex = 16;
+            this.RB_available_Textbook.TabStop = true;
+            this.RB_available_Textbook.Text = "Available";
+            this.RB_available_Textbook.UseVisualStyleBackColor = true;
+            // 
+            // RB_NotAvailable_Textbook
+            // 
+            this.RB_NotAvailable_Textbook.AutoSize = true;
+            this.RB_NotAvailable_Textbook.Location = new System.Drawing.Point(229, 357);
+            this.RB_NotAvailable_Textbook.Name = "RB_NotAvailable_Textbook";
+            this.RB_NotAvailable_Textbook.Size = new System.Drawing.Size(88, 17);
+            this.RB_NotAvailable_Textbook.TabIndex = 17;
+            this.RB_NotAvailable_Textbook.TabStop = true;
+            this.RB_NotAvailable_Textbook.Text = "Not Available";
+            this.RB_NotAvailable_Textbook.UseVisualStyleBackColor = true;
+            // 
+            // Cmb_Author_Textbook
+            // 
+            this.Cmb_Author_Textbook.Location = new System.Drawing.Point(101, 265);
+            this.Cmb_Author_Textbook.Name = "Cmb_Author_Textbook";
+            this.Cmb_Author_Textbook.Size = new System.Drawing.Size(234, 20);
+            this.Cmb_Author_Textbook.TabIndex = 30;
             // 
             // LibraryMaintenanceForm
             // 
@@ -765,7 +705,6 @@
         private System.Windows.Forms.TabPage Tab_Subjects;
         private System.Windows.Forms.TabPage Tab_Authors;
         private System.Windows.Forms.TextBox Txt_ISBN_Textbook;
-        private System.Windows.Forms.TextBox Txt_Author_Textbook;
         private System.Windows.Forms.Label LB_Edition_Textbook;
         private System.Windows.Forms.Label LB_PHYear;
         private System.Windows.Forms.Label LB_Subject;
@@ -775,22 +714,17 @@
         private System.Windows.Forms.Label LB_Author_Textbook;
         private System.Windows.Forms.Label LB_Textbook_ID;
         private System.Windows.Forms.DataGridView DataGrid_Textbook;
-        private System.Windows.Forms.Button Bnt_Clear_TextBook;
         private System.Windows.Forms.Button Bnt_Search_TextBook;
         private System.Windows.Forms.TextBox TxtBx_Search_TextBook;
         private System.Windows.Forms.Label LB_Search_TextBook;
-        private System.Windows.Forms.RadioButton RB_NotAvailable_Textbook;
-        private System.Windows.Forms.RadioButton RB_available_Textbook;
         private System.Windows.Forms.TextBox Txt_Qty_Textbook;
         private System.Windows.Forms.TextBox Txt_Title_Textbook;
         private System.Windows.Forms.Button Bnt_Close_Textbook;
-        private System.Windows.Forms.Button Bnt_Delete_Textbook;
         private System.Windows.Forms.Button Bnt_Update_Textbook;
         private System.Windows.Forms.Button Bnt_New_Textbook;
         private System.Windows.Forms.DateTimePicker dateTimePicker_Year_Textbook;
         private System.Windows.Forms.PictureBox PicBox_Subjects;
         private System.Windows.Forms.Button Bnt_Close_Subject;
-        private System.Windows.Forms.Button Bnt_Delete_Subject;
         private System.Windows.Forms.Button Bnt_Update_Subject;
         private System.Windows.Forms.Button Bnt_New_Subject;
         private System.Windows.Forms.TextBox Txt_Description_Subject;
@@ -799,12 +733,10 @@
         private System.Windows.Forms.Label LB_Name_Subject;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView DataGrid_Subject;
-        private System.Windows.Forms.Button Bnt_Clear_Subject;
         private System.Windows.Forms.Button Bnt_Search_Subject;
         private System.Windows.Forms.TextBox Txt_Search_Subject;
         private System.Windows.Forms.Label LB_Search_Subject;
         private System.Windows.Forms.Button Bnt_Close_Author;
-        private System.Windows.Forms.Button Bnt_Delete_Author;
         private System.Windows.Forms.Button Bnt_Update_Author;
         private System.Windows.Forms.Button Bnt_New_Authors;
         private System.Windows.Forms.TextBox Txt_LastName_Author;
@@ -813,7 +745,6 @@
         private System.Windows.Forms.Label LB_FirstName_Authors;
         private System.Windows.Forms.Label LB_Author_ID_Authors;
         private System.Windows.Forms.DataGridView dataGridView_Authors;
-        private System.Windows.Forms.Button Bnt_Clear_Author;
         private System.Windows.Forms.Button Bnt_Search_Author;
         private System.Windows.Forms.TextBox Txt_Search_Author;
         private System.Windows.Forms.Label LB_Search_Authors;
@@ -822,5 +753,8 @@
         private System.Windows.Forms.Label LB_TextBook_ID_Textbook;
         private System.Windows.Forms.Label LB_Subject_ID_Subjects;
         private System.Windows.Forms.Label LB_Authros_ID_Authors;
+        private System.Windows.Forms.RadioButton RB_NotAvailable_Textbook;
+        private System.Windows.Forms.RadioButton RB_available_Textbook;
+        private System.Windows.Forms.TextBox Cmb_Author_Textbook;
     }
 }
