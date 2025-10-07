@@ -30,10 +30,7 @@ namespace CMPG223_Group4_Project
 
         private void eNDOWMENTSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Code just to check if form works and loads with no code. - Scholtz 
-            EndowmentsForm newform = new EndowmentsForm();
 
-            newform.ShowDialog();
         }
 
         private void eMPLOYEEMENTToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,6 +73,20 @@ namespace CMPG223_Group4_Project
         {
             using (var f = new LibraryMaintenanceForm(LibraryTab.Subjects))
                 f.ShowDialog(this);
+        }
+
+        private void dONORSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EndowmentsForm newform = new EndowmentsForm(StaffId);
+
+            newform.ShowDialog();
+        }
+
+        private void dONATIONSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EndowmentsForm newform = new EndowmentsForm(StaffId);
+
+            newform.ShowDialog();
         }
     }
 }

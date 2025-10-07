@@ -52,7 +52,6 @@
             this.LB_Author_Textbook = new System.Windows.Forms.Label();
             this.LB_Textbook_ID = new System.Windows.Forms.Label();
             this.DataGrid_Textbook = new System.Windows.Forms.DataGridView();
-            this.Bnt_Clear_TextBook = new System.Windows.Forms.Button();
             this.Bnt_Search_TextBook = new System.Windows.Forms.Button();
             this.TxtBx_Search_TextBook = new System.Windows.Forms.TextBox();
             this.LB_Search_TextBook = new System.Windows.Forms.Label();
@@ -137,13 +136,12 @@
             this.Tab_TxtBooks.Controls.Add(this.LB_Author_Textbook);
             this.Tab_TxtBooks.Controls.Add(this.LB_Textbook_ID);
             this.Tab_TxtBooks.Controls.Add(this.DataGrid_Textbook);
-            this.Tab_TxtBooks.Controls.Add(this.Bnt_Clear_TextBook);
             this.Tab_TxtBooks.Controls.Add(this.Bnt_Search_TextBook);
             this.Tab_TxtBooks.Controls.Add(this.TxtBx_Search_TextBook);
             this.Tab_TxtBooks.Controls.Add(this.LB_Search_TextBook);
             this.Tab_TxtBooks.Location = new System.Drawing.Point(4, 22);
             this.Tab_TxtBooks.Name = "Tab_TxtBooks";
-            this.Tab_TxtBooks.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Tab_TxtBooks.Padding = new System.Windows.Forms.Padding(3);
             this.Tab_TxtBooks.Size = new System.Drawing.Size(882, 400);
             this.Tab_TxtBooks.TabIndex = 1;
             this.Tab_TxtBooks.Text = "Textbooks";
@@ -152,7 +150,7 @@
             // 
             this.CB_DBSubjects_TextBooks.FormattingEnabled = true;
             this.CB_DBSubjects_TextBooks.Location = new System.Drawing.Point(465, 264);
-            this.CB_DBSubjects_TextBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CB_DBSubjects_TextBooks.Margin = new System.Windows.Forms.Padding(2);
             this.CB_DBSubjects_TextBooks.Name = "CB_DBSubjects_TextBooks";
             this.CB_DBSubjects_TextBooks.Size = new System.Drawing.Size(234, 21);
             this.CB_DBSubjects_TextBooks.TabIndex = 29;
@@ -347,16 +345,6 @@
             this.DataGrid_Textbook.Size = new System.Drawing.Size(870, 180);
             this.DataGrid_Textbook.TabIndex = 4;
             // 
-            // Bnt_Clear_TextBook
-            // 
-            this.Bnt_Clear_TextBook.BackgroundImage = global::CMPG223_Group4_Project.Properties.Resources.Clear_Icon;
-            this.Bnt_Clear_TextBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Bnt_Clear_TextBook.Location = new System.Drawing.Point(752, 6);
-            this.Bnt_Clear_TextBook.Name = "Bnt_Clear_TextBook";
-            this.Bnt_Clear_TextBook.Size = new System.Drawing.Size(124, 23);
-            this.Bnt_Clear_TextBook.TabIndex = 3;
-            this.Bnt_Clear_TextBook.UseVisualStyleBackColor = true;
-            // 
             // Bnt_Search_TextBook
             // 
             this.Bnt_Search_TextBook.BackgroundImage = global::CMPG223_Group4_Project.Properties.Resources.Magnifying_glass;
@@ -405,7 +393,7 @@
             this.Tab_Subjects.Controls.Add(this.Bnt_Search_Subject);
             this.Tab_Subjects.Location = new System.Drawing.Point(4, 22);
             this.Tab_Subjects.Name = "Tab_Subjects";
-            this.Tab_Subjects.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Tab_Subjects.Padding = new System.Windows.Forms.Padding(3);
             this.Tab_Subjects.Size = new System.Drawing.Size(882, 400);
             this.Tab_Subjects.TabIndex = 2;
             this.Tab_Subjects.Text = "Subjects";
@@ -580,7 +568,7 @@
             this.Tab_Authors.Controls.Add(this.Bnt_Search_Author);
             this.Tab_Authors.Location = new System.Drawing.Point(4, 22);
             this.Tab_Authors.Name = "Tab_Authors";
-            this.Tab_Authors.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Tab_Authors.Padding = new System.Windows.Forms.Padding(3);
             this.Tab_Authors.Size = new System.Drawing.Size(882, 400);
             this.Tab_Authors.TabIndex = 3;
             this.Tab_Authors.Text = "Authors";
@@ -775,7 +763,6 @@
         private System.Windows.Forms.Label LB_Author_Textbook;
         private System.Windows.Forms.Label LB_Textbook_ID;
         private System.Windows.Forms.DataGridView DataGrid_Textbook;
-        private System.Windows.Forms.Button Bnt_Clear_TextBook;
         private System.Windows.Forms.Button Bnt_Search_TextBook;
         private System.Windows.Forms.TextBox TxtBx_Search_TextBook;
         private System.Windows.Forms.Label LB_Search_TextBook;
