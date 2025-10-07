@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.Bnt_Close_Staff = new System.Windows.Forms.Button();
-            this.Bnt_Delete_Staff = new System.Windows.Forms.Button();
             this.Bnt_Update_Staff = new System.Windows.Forms.Button();
             this.Bnt_New_Staff = new System.Windows.Forms.Button();
             this.Txt_UserName_Staff = new System.Windows.Forms.TextBox();
@@ -44,7 +43,6 @@
             this.LB_LastName_Staff = new System.Windows.Forms.Label();
             this.LB_FirstName_Staff = new System.Windows.Forms.Label();
             this.DataGrid_Staff = new System.Windows.Forms.DataGridView();
-            this.Bnt_Clear_Staff = new System.Windows.Forms.Button();
             this.Bnt_Search_Staff = new System.Windows.Forms.Button();
             this.TxtBx_Search_Staff = new System.Windows.Forms.TextBox();
             this.LB_Search_Staff = new System.Windows.Forms.Label();
@@ -65,16 +63,6 @@
             this.Bnt_Close_Staff.Text = "Close";
             this.Bnt_Close_Staff.UseVisualStyleBackColor = false;
             this.Bnt_Close_Staff.Click += new System.EventHandler(this.Bnt_Close_Staff_Click);
-            // 
-            // Bnt_Delete_Staff
-            // 
-            this.Bnt_Delete_Staff.BackColor = System.Drawing.Color.Silver;
-            this.Bnt_Delete_Staff.Location = new System.Drawing.Point(756, 310);
-            this.Bnt_Delete_Staff.Name = "Bnt_Delete_Staff";
-            this.Bnt_Delete_Staff.Size = new System.Drawing.Size(124, 23);
-            this.Bnt_Delete_Staff.TabIndex = 46;
-            this.Bnt_Delete_Staff.Text = "Delete";
-            this.Bnt_Delete_Staff.UseVisualStyleBackColor = false;
             // 
             // Bnt_Update_Staff
             // 
@@ -197,21 +185,11 @@
             this.DataGrid_Staff.TabIndex = 32;
             this.DataGrid_Staff.SelectionChanged += new System.EventHandler(this.DataGrid_Staff_SelectionChanged);
             // 
-            // Bnt_Clear_Staff
-            // 
-            this.Bnt_Clear_Staff.BackgroundImage = global::CMPG223_Group4_Project.Properties.Resources.Clear_Icon;
-            this.Bnt_Clear_Staff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Bnt_Clear_Staff.Location = new System.Drawing.Point(756, 11);
-            this.Bnt_Clear_Staff.Name = "Bnt_Clear_Staff";
-            this.Bnt_Clear_Staff.Size = new System.Drawing.Size(124, 23);
-            this.Bnt_Clear_Staff.TabIndex = 31;
-            this.Bnt_Clear_Staff.UseVisualStyleBackColor = true;
-            // 
             // Bnt_Search_Staff
             // 
             this.Bnt_Search_Staff.BackgroundImage = global::CMPG223_Group4_Project.Properties.Resources.Magnifying_glass;
             this.Bnt_Search_Staff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Bnt_Search_Staff.Location = new System.Drawing.Point(603, 11);
+            this.Bnt_Search_Staff.Location = new System.Drawing.Point(754, 10);
             this.Bnt_Search_Staff.Name = "Bnt_Search_Staff";
             this.Bnt_Search_Staff.Size = new System.Drawing.Size(124, 23);
             this.Bnt_Search_Staff.TabIndex = 30;
@@ -284,7 +262,6 @@
             this.Controls.Add(this.LB_Role_Staff);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.Bnt_Close_Staff);
-            this.Controls.Add(this.Bnt_Delete_Staff);
             this.Controls.Add(this.Bnt_Update_Staff);
             this.Controls.Add(this.Bnt_New_Staff);
             this.Controls.Add(this.Txt_UserName_Staff);
@@ -299,11 +276,10 @@
             this.Controls.Add(this.LB_LastName_Staff);
             this.Controls.Add(this.LB_FirstName_Staff);
             this.Controls.Add(this.DataGrid_Staff);
-            this.Controls.Add(this.Bnt_Clear_Staff);
             this.Controls.Add(this.Bnt_Search_Staff);
             this.Controls.Add(this.TxtBx_Search_Staff);
             this.Controls.Add(this.LB_Search_Staff);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StaffForm";
             this.Text = "StaffForm";
             this.Load += new System.EventHandler(this.StaffForm_Load);
@@ -315,7 +291,6 @@
 
         #endregion
         private System.Windows.Forms.Button Bnt_Close_Staff;
-        private System.Windows.Forms.Button Bnt_Delete_Staff;
         private System.Windows.Forms.Button Bnt_Update_Staff;
         private System.Windows.Forms.Button Bnt_New_Staff;
         private System.Windows.Forms.TextBox Txt_UserName_Staff;
@@ -330,7 +305,6 @@
         private System.Windows.Forms.Label LB_LastName_Staff;
         private System.Windows.Forms.Label LB_FirstName_Staff;
         private System.Windows.Forms.DataGridView DataGrid_Staff;
-        private System.Windows.Forms.Button Bnt_Clear_Staff;
         private System.Windows.Forms.Button Bnt_Search_Staff;
         private System.Windows.Forms.TextBox TxtBx_Search_Staff;
         private System.Windows.Forms.Label LB_Search_Staff;

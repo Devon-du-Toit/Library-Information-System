@@ -36,14 +36,6 @@ namespace CMPG223_Group4_Project
             newform.ShowDialog();
         }
 
-        private void eMPLOYEEMENTToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Code just to check if form works and loads with no code. - Scholtz 
-            StaffForm newform = new StaffForm();
-
-            newform.ShowDialog();
-        }
-
         private void bORROWToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Code just to check if form works and loads with no code. - Scholtz 
@@ -76,6 +68,13 @@ namespace CMPG223_Group4_Project
         {
             using (var f = new LibraryMaintenanceForm(LibraryTab.Subjects))
                 f.ShowDialog(this);
+        }
+
+        private void sTAFFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StaffForm newform = new StaffForm();
+
+            newform.ShowDialog();
         }
     }
 }
