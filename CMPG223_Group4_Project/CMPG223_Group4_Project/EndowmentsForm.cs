@@ -507,5 +507,15 @@ namespace CMPG223_Group4_Project
             txtUpdateType.Text = row.Cells["Type"].Value?.ToString() ?? string.Empty;
             txtUpdateAmount.Text = row.Cells["Amount"].Value?.ToString() ?? string.Empty;
         }
+
+        private void Bnt_Close_Doner_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Bnt_Close_Donations_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
