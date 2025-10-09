@@ -70,9 +70,9 @@
             this.GB_Reports_Reports.Controls.Add(this.RB_Authors_Reports);
             this.GB_Reports_Reports.Controls.Add(this.RB_Subjects_Reports);
             this.GB_Reports_Reports.Location = new System.Drawing.Point(9, 10);
-            this.GB_Reports_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB_Reports_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.GB_Reports_Reports.Name = "GB_Reports_Reports";
-            this.GB_Reports_Reports.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB_Reports_Reports.Padding = new System.Windows.Forms.Padding(2);
             this.GB_Reports_Reports.Size = new System.Drawing.Size(185, 362);
             this.GB_Reports_Reports.TabIndex = 0;
             this.GB_Reports_Reports.TabStop = false;
@@ -82,7 +82,7 @@
             // 
             this.RB_BorrowedBook_Reports.AutoSize = true;
             this.RB_BorrowedBook_Reports.Location = new System.Drawing.Point(4, 17);
-            this.RB_BorrowedBook_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RB_BorrowedBook_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.RB_BorrowedBook_Reports.Name = "RB_BorrowedBook_Reports";
             this.RB_BorrowedBook_Reports.Size = new System.Drawing.Size(138, 17);
             this.RB_BorrowedBook_Reports.TabIndex = 36;
@@ -95,7 +95,7 @@
             // 
             this.RB_Borrowers_Reports.AutoSize = true;
             this.RB_Borrowers_Reports.Location = new System.Drawing.Point(4, 47);
-            this.RB_Borrowers_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RB_Borrowers_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.RB_Borrowers_Reports.Name = "RB_Borrowers_Reports";
             this.RB_Borrowers_Reports.Size = new System.Drawing.Size(107, 17);
             this.RB_Borrowers_Reports.TabIndex = 35;
@@ -108,7 +108,7 @@
             // 
             this.RB_Textbooks_Reports.AutoSize = true;
             this.RB_Textbooks_Reports.Location = new System.Drawing.Point(4, 212);
-            this.RB_Textbooks_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RB_Textbooks_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.RB_Textbooks_Reports.Name = "RB_Textbooks_Reports";
             this.RB_Textbooks_Reports.Size = new System.Drawing.Size(110, 17);
             this.RB_Textbooks_Reports.TabIndex = 34;
@@ -121,7 +121,7 @@
             // 
             this.RB_LibaryStaff_Reports.AutoSize = true;
             this.RB_LibaryStaff_Reports.Location = new System.Drawing.Point(4, 144);
-            this.RB_LibaryStaff_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RB_LibaryStaff_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.RB_LibaryStaff_Reports.Name = "RB_LibaryStaff_Reports";
             this.RB_LibaryStaff_Reports.Size = new System.Drawing.Size(82, 17);
             this.RB_LibaryStaff_Reports.TabIndex = 33;
@@ -134,7 +134,7 @@
             // 
             this.RB_Dontions_Reports.AutoSize = true;
             this.RB_Dontions_Reports.Location = new System.Drawing.Point(4, 80);
-            this.RB_Dontions_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RB_Dontions_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.RB_Dontions_Reports.Name = "RB_Dontions_Reports";
             this.RB_Dontions_Reports.Size = new System.Drawing.Size(108, 17);
             this.RB_Dontions_Reports.TabIndex = 32;
@@ -147,12 +147,12 @@
             // 
             this.RB_Doners_Reports.AutoSize = true;
             this.RB_Doners_Reports.Location = new System.Drawing.Point(4, 112);
-            this.RB_Doners_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RB_Doners_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.RB_Doners_Reports.Name = "RB_Doners_Reports";
             this.RB_Doners_Reports.Size = new System.Drawing.Size(94, 17);
             this.RB_Doners_Reports.TabIndex = 31;
             this.RB_Doners_Reports.TabStop = true;
-            this.RB_Doners_Reports.Text = "Doners Report";
+            this.RB_Doners_Reports.Text = "Donors Report";
             this.RB_Doners_Reports.UseVisualStyleBackColor = true;
             this.RB_Doners_Reports.CheckedChanged += new System.EventHandler(this.RB_Doners_Reports_CheckedChanged);
             // 
@@ -160,7 +160,7 @@
             // 
             this.RB_Authors_Reports.AutoSize = true;
             this.RB_Authors_Reports.Location = new System.Drawing.Point(4, 178);
-            this.RB_Authors_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RB_Authors_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.RB_Authors_Reports.Name = "RB_Authors_Reports";
             this.RB_Authors_Reports.Size = new System.Drawing.Size(144, 17);
             this.RB_Authors_Reports.TabIndex = 30;
@@ -173,7 +173,7 @@
             // 
             this.RB_Subjects_Reports.AutoSize = true;
             this.RB_Subjects_Reports.Location = new System.Drawing.Point(4, 249);
-            this.RB_Subjects_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RB_Subjects_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.RB_Subjects_Reports.Name = "RB_Subjects_Reports";
             this.RB_Subjects_Reports.Size = new System.Drawing.Size(149, 17);
             this.RB_Subjects_Reports.TabIndex = 29;
@@ -195,9 +195,9 @@
             this.GB_Filters_Reports.Controls.Add(this.Bnt_Clear_Reports);
             this.GB_Filters_Reports.Controls.Add(this.Bnt_Apply_Reports);
             this.GB_Filters_Reports.Location = new System.Drawing.Point(206, 10);
-            this.GB_Filters_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB_Filters_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.GB_Filters_Reports.Name = "GB_Filters_Reports";
-            this.GB_Filters_Reports.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB_Filters_Reports.Padding = new System.Windows.Forms.Padding(2);
             this.GB_Filters_Reports.Size = new System.Drawing.Size(516, 182);
             this.GB_Filters_Reports.TabIndex = 1;
             this.GB_Filters_Reports.TabStop = false;
@@ -208,7 +208,7 @@
             // 
             this.CB_TextBookTitle_Reports.FormattingEnabled = true;
             this.CB_TextBookTitle_Reports.Location = new System.Drawing.Point(104, 107);
-            this.CB_TextBookTitle_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CB_TextBookTitle_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.CB_TextBookTitle_Reports.Name = "CB_TextBookTitle_Reports";
             this.CB_TextBookTitle_Reports.Size = new System.Drawing.Size(153, 21);
             this.CB_TextBookTitle_Reports.TabIndex = 36;
@@ -218,7 +218,7 @@
             // 
             this.CB_Borrower_Reports.FormattingEnabled = true;
             this.CB_Borrower_Reports.Location = new System.Drawing.Point(104, 65);
-            this.CB_Borrower_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CB_Borrower_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.CB_Borrower_Reports.Name = "CB_Borrower_Reports";
             this.CB_Borrower_Reports.Size = new System.Drawing.Size(153, 21);
             this.CB_Borrower_Reports.TabIndex = 35;
@@ -227,7 +227,7 @@
             // dateTimePicker_To_Reports
             // 
             this.dateTimePicker_To_Reports.Location = new System.Drawing.Point(304, 26);
-            this.dateTimePicker_To_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker_To_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker_To_Reports.Name = "dateTimePicker_To_Reports";
             this.dateTimePicker_To_Reports.Size = new System.Drawing.Size(177, 20);
             this.dateTimePicker_To_Reports.TabIndex = 34;
@@ -235,7 +235,7 @@
             // dateTimePicker_From_Reports
             // 
             this.dateTimePicker_From_Reports.Location = new System.Drawing.Point(74, 25);
-            this.dateTimePicker_From_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker_From_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker_From_Reports.Name = "dateTimePicker_From_Reports";
             this.dateTimePicker_From_Reports.Size = new System.Drawing.Size(177, 20);
             this.dateTimePicker_From_Reports.TabIndex = 33;
@@ -306,9 +306,9 @@
             // 
             this.GB_Preview_Reports.Controls.Add(this.dataGridView_Reports);
             this.GB_Preview_Reports.Location = new System.Drawing.Point(206, 197);
-            this.GB_Preview_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB_Preview_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.GB_Preview_Reports.Name = "GB_Preview_Reports";
-            this.GB_Preview_Reports.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB_Preview_Reports.Padding = new System.Windows.Forms.Padding(2);
             this.GB_Preview_Reports.Size = new System.Drawing.Size(516, 146);
             this.GB_Preview_Reports.TabIndex = 2;
             this.GB_Preview_Reports.TabStop = false;
@@ -318,7 +318,7 @@
             // 
             this.dataGridView_Reports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Reports.Location = new System.Drawing.Point(18, 17);
-            this.dataGridView_Reports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView_Reports.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView_Reports.Name = "dataGridView_Reports";
             this.dataGridView_Reports.RowHeadersWidth = 51;
             this.dataGridView_Reports.RowTemplate.Height = 24;
@@ -369,7 +369,7 @@
             this.Controls.Add(this.GB_Preview_Reports);
             this.Controls.Add(this.GB_Filters_Reports);
             this.Controls.Add(this.GB_Reports_Reports);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ReportsForm";
             this.Text = "ReportsForm";
             this.Load += new System.EventHandler(this.ReportsForm_Load);
