@@ -393,7 +393,8 @@ namespace CMPG223_Group4_Project
 
         private void GB_Filters_Reports_Enter(object sender, EventArgs e)
         {
-
+            LoadBorrowerFilter();
+            LoadTextbookFilter();
         }
 
         private void Bnt_Clear_Reports_Click(object sender, EventArgs e)
@@ -407,6 +408,17 @@ namespace CMPG223_Group4_Project
 
 
             borrowReport();
+        }
+
+        private void Bnt_Print_Reports_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+            "Printer not found. Please check your printer connection or install a printer before continuing.",
+            "Printer Error",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Error
+);
+
         }
     }
 }

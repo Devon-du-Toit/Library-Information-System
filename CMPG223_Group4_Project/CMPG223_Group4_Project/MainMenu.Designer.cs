@@ -103,14 +103,14 @@
             // dONATIONSToolStripMenuItem
             // 
             this.dONATIONSToolStripMenuItem.Name = "dONATIONSToolStripMenuItem";
-            this.dONATIONSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dONATIONSToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.dONATIONSToolStripMenuItem.Text = "DONATIONS";
             this.dONATIONSToolStripMenuItem.Click += new System.EventHandler(this.dONATIONSToolStripMenuItem_Click);
             // 
             // dONORSToolStripMenuItem
             // 
             this.dONORSToolStripMenuItem.Name = "dONORSToolStripMenuItem";
-            this.dONORSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dONORSToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.dONORSToolStripMenuItem.Text = "DONORS";
             this.dONORSToolStripMenuItem.Click += new System.EventHandler(this.dONORSToolStripMenuItem_Click);
             // 
@@ -126,8 +126,9 @@
             // sTAFFToolStripMenuItem
             // 
             this.sTAFFToolStripMenuItem.Name = "sTAFFToolStripMenuItem";
-            this.sTAFFToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.sTAFFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sTAFFToolStripMenuItem.Text = "STAFF";
+            this.sTAFFToolStripMenuItem.Click += new System.EventHandler(this.sTAFFToolStripMenuItem_Click);
             // 
             // bORROWToolStripMenuItem
             // 
@@ -171,6 +172,7 @@
             this.Name = "MainMenu";
             this.Text = "MainMenu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

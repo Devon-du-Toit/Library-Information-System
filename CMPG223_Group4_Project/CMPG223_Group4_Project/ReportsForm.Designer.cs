@@ -334,6 +334,7 @@
             this.Bnt_Print_Reports.TabIndex = 26;
             this.Bnt_Print_Reports.Text = "Print";
             this.Bnt_Print_Reports.UseVisualStyleBackColor = false;
+            this.Bnt_Print_Reports.Click += new System.EventHandler(this.Bnt_Print_Reports_Click);
             // 
             // Bnt_Export_Reports
             // 
