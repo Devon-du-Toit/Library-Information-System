@@ -88,5 +88,19 @@ namespace CMPG223_Group4_Project
 
             newform.ShowDialog();
         }
+
+        private void sTAFFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            if (Role == "STAFF")
+            {
+                eMPLOYEEMENTToolStripMenuItem.Visible = false;
+                dONATIONSToolStripMenuItem.Visible = false;
+            }
+        }
     }
 }
