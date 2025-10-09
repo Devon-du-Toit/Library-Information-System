@@ -30,8 +30,13 @@ namespace CMPG223_Group4_Project
 
         private void eNDOWMENTSToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void eMPLOYEEMENTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             //Code just to check if form works and loads with no code. - Scholtz 
-            EndowmentsForm newform = new EndowmentsForm();
+            StaffForm newform = new StaffForm();
 
             newform.ShowDialog();
         }
@@ -70,9 +75,16 @@ namespace CMPG223_Group4_Project
                 f.ShowDialog(this);
         }
 
-        private void sTAFFToolStripMenuItem_Click(object sender, EventArgs e)
+        private void dONORSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StaffForm newform = new StaffForm();
+            EndowmentsForm newform = new EndowmentsForm(StaffId);
+
+            newform.ShowDialog();
+        }
+
+        private void dONATIONSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EndowmentsForm newform = new EndowmentsForm(StaffId);
 
             newform.ShowDialog();
         }
