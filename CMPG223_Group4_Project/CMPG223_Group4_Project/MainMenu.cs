@@ -47,9 +47,10 @@ namespace CMPG223_Group4_Project
         private void bORROWToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Code just to check if form works and loads with no code. - Scholtz 
-            ReadersForm newform = new ReadersForm();
-
-            newform.ShowDialog();
+            using (var newform = new ReadersForm(StaffId))
+            {
+                newform.ShowDialog(this);
+            }
         }
 
         private void rEPORTSToolStripMenuItem_Click(object sender, EventArgs e)
