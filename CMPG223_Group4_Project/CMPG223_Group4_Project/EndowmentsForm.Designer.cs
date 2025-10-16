@@ -377,6 +377,7 @@
             this.CB_DonerName_Donations.Name = "CB_DonerName_Donations";
             this.CB_DonerName_Donations.Size = new System.Drawing.Size(168, 24);
             this.CB_DonerName_Donations.TabIndex = 1;
+            this.CB_DonerName_Donations.SelectedIndexChanged += new System.EventHandler(this.CB_DonerName_Donations_SelectedIndexChanged);
             // 
             // LB_DonerName_Donations
             // 
