@@ -507,5 +507,57 @@ namespace CMPG223_Group4_Project
             txtUpdateType.Text = row.Cells["Type"].Value?.ToString() ?? string.Empty;
             txtUpdateAmount.Text = row.Cells["Amount"].Value?.ToString() ?? string.Empty;
         }
+
+        private void CB_DonerName_Donations_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (CB_DonerName_Donations.SelectedValue == null || CB_DonerName_Donations.SelectedValue.ToString() == "")
+            {
+                LB_DBContactNumber_Donations.Text = "N/A";
+                return;
+            }
+
+            int donorId;
+            if (!int.TryParse(CB_DonerName_Donations.SelectedValue.ToString(), out donorId))
+            {
+                LB_DBContactNumber_Donations.Text = "N/A";
+                return;
+            }
+
+            try
+            {
+                string cs = ConfigurationManager.ConnectionStrings["LibraryDb"].ConnectionString;
+
+                using (var conn = new MySqlConnection(cs))
+                {
+                    conn.Open();
+
+                    string sql = "SELECT Contact_Number, Email FROM DONOR WHERE Donor_ID = @id;";
+                    using (var cmd = new MySqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@id", donorId);
+
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                LB_DBContactNumber_Donations.Text = reader["Contact_Number"].ToString();
+                                LB_DBEmail_Donations.Text = reader["Email"].ToString();
+                            }
+                            else
+                            {
+                                LB_DBContactNumber_Donations.Text = "N/A";
+                                LB_DBEmail_Donations.Text = "N/A";
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to load donor contact/email:\n\n" + ex.Message,
+                                "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
     }
 }

@@ -31,6 +31,8 @@
             this.TabControl_Endowments = new System.Windows.Forms.TabControl();
             this.Tab_Donations = new System.Windows.Forms.TabPage();
             this.GB_Maintenance_Donations = new System.Windows.Forms.GroupBox();
+            this.lblDonationID = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.Bnt_Update_Donations = new System.Windows.Forms.Button();
             this.txtUpdateType = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,8 +77,6 @@
             this.LB_Search_Doners = new System.Windows.Forms.Label();
             this.Bnt_Clear_Doners = new System.Windows.Forms.Button();
             this.Bnt_Search_Doners = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblDonationID = new System.Windows.Forms.Label();
             this.TabControl_Endowments.SuspendLayout();
             this.Tab_Donations.SuspendLayout();
             this.GB_Maintenance_Donations.SuspendLayout();
@@ -132,6 +132,28 @@
             this.GB_Maintenance_Donations.TabIndex = 13;
             this.GB_Maintenance_Donations.TabStop = false;
             this.GB_Maintenance_Donations.Text = "Donations Maintenance";
+            // 
+            // lblDonationID
+            // 
+            this.lblDonationID.AutoSize = true;
+            this.lblDonationID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDonationID.Location = new System.Drawing.Point(172, 47);
+            this.lblDonationID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDonationID.Name = "lblDonationID";
+            this.lblDonationID.Size = new System.Drawing.Size(48, 20);
+            this.lblDonationID.TabIndex = 17;
+            this.lblDonationID.Text = "Date:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(17, 47);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(99, 20);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Donation ID:";
             // 
             // Bnt_Update_Donations
             // 
@@ -344,7 +366,7 @@
             // 
             this.LB_DBContactNumber_Donations.AutoSize = true;
             this.LB_DBContactNumber_Donations.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB_DBContactNumber_Donations.Location = new System.Drawing.Point(177, 76);
+            this.LB_DBContactNumber_Donations.Location = new System.Drawing.Point(192, 76);
             this.LB_DBContactNumber_Donations.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LB_DBContactNumber_Donations.Name = "LB_DBContactNumber_Donations";
             this.LB_DBContactNumber_Donations.Size = new System.Drawing.Size(223, 20);
@@ -371,6 +393,7 @@
             this.CB_DonerName_Donations.Name = "CB_DonerName_Donations";
             this.CB_DonerName_Donations.Size = new System.Drawing.Size(168, 24);
             this.CB_DonerName_Donations.TabIndex = 1;
+            this.CB_DonerName_Donations.SelectedIndexChanged += new System.EventHandler(this.CB_DonerName_Donations_SelectedIndexChanged);
             // 
             // LB_DonerName_Donations
             // 
@@ -441,7 +464,7 @@
             this.TabControl_Doners.Location = new System.Drawing.Point(4, 22);
             this.TabControl_Doners.Name = "TabControl_Doners";
             this.TabControl_Doners.Padding = new System.Windows.Forms.Padding(3);
-            this.TabControl_Doners.Size = new System.Drawing.Size(932, 423);
+            this.TabControl_Doners.Size = new System.Drawing.Size(932, 462);
             this.TabControl_Doners.TabIndex = 1;
             this.TabControl_Doners.Text = "Doners";
             // 
@@ -611,28 +634,6 @@
             this.Bnt_Search_Doners.Size = new System.Drawing.Size(124, 23);
             this.Bnt_Search_Doners.TabIndex = 30;
             this.Bnt_Search_Doners.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 47);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 20);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Donation ID:";
-            // 
-            // lblDonationID
-            // 
-            this.lblDonationID.AutoSize = true;
-            this.lblDonationID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDonationID.Location = new System.Drawing.Point(172, 47);
-            this.lblDonationID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDonationID.Name = "lblDonationID";
-            this.lblDonationID.Size = new System.Drawing.Size(48, 20);
-            this.lblDonationID.TabIndex = 17;
-            this.lblDonationID.Text = "Date:";
             // 
             // EndowmentsForm
             // 
